@@ -1,0 +1,11 @@
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\bin\Debug\Dia da Semana.exe.config
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\bin\Debug\Dia da Semana.exe
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\bin\Debug\Dia da Semana.pdb
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia da Semana.csproj.AssemblyReference.cache
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia_da_Semana.Form1.resources
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia_da_Semana.Properties.Resources.resources
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia da Semana.csproj.GenerateResource.cache
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia da Semana.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia da Semana.exe
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia da Semana.pdb
+C:\Users\mateus.spereira8\source\repos\Dia da Semana\Dia da Semana\obj\Debug\Dia da Semana.exe.config
