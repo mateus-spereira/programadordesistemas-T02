@@ -1,0 +1,11 @@
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\bin\Debug\Verificação de Estoque.exe.config
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\bin\Debug\Verificação de Estoque.exe
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\bin\Debug\Verificação de Estoque.pdb
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação de Estoque.csproj.AssemblyReference.cache
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação_de_Estoque.Form1.resources
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação_de_Estoque.Properties.Resources.resources
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação de Estoque.csproj.GenerateResource.cache
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação de Estoque.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação de Estoque.exe
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação de Estoque.pdb
+C:\Users\mateus.spereira8\source\repos\Verificação de Estoque\Verificação de Estoque\obj\Debug\Verificação de Estoque.exe.config
