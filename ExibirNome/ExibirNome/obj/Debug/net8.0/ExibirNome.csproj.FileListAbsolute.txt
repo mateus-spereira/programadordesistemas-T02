@@ -1,0 +1,15 @@
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\bin\Debug\net8.0\ExibirNome.exe
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\bin\Debug\net8.0\ExibirNome.deps.json
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\bin\Debug\net8.0\ExibirNome.runtimeconfig.json
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\bin\Debug\net8.0\ExibirNome.dll
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\bin\Debug\net8.0\ExibirNome.pdb
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.AssemblyInfoInputs.cache
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.AssemblyInfo.cs
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.sourcelink.json
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.dll
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\refint\ExibirNome.dll
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.pdb
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ExibirNome.genruntimeconfig.cache
+C:\Users\mateus.spereira8\source\repos\ExibirNome\ExibirNome\obj\Debug\net8.0\ref\ExibirNome.dll

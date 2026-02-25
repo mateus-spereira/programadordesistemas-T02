@@ -1,0 +1,10 @@
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\bin\Debug\calculadorasimples.exe.config
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\bin\Debug\calculadorasimples.exe
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\bin\Debug\calculadorasimples.pdb
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.csproj.AssemblyReference.cache
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.FrmCalculadoraSimples.resources
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.Properties.Resources.resources
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.csproj.GenerateResource.cache
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.exe
+C:\Users\mateus.spereira8\source\repos\calculadorasimples\calculadorasimples\obj\Debug\calculadorasimples.pdb
