@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrizes", "Matrizes\Matrizes.csproj", "{777D89EA-5B48-41C9-9399-E395DF644B32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{777D89EA-5B48-41C9-9399-E395DF644B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777D89EA-5B48-41C9-9399-E395DF644B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777D89EA-5B48-41C9-9399-E395DF644B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777D89EA-5B48-41C9-9399-E395DF644B32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08734A1F-3B35-43C1-8CB9-CD1101E691C2}
+	EndGlobalSection
+EndGlobal

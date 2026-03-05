@@ -1,0 +1,11 @@
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.csproj.AssemblyReference.cache
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.FrmMatrizes.resources
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.Properties.Resources.resources
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.csproj.GenerateResource.cache
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\bin\Debug\Matrizes.exe.config
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\bin\Debug\Matrizes.exe
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\bin\Debug\Matrizes.pdb
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.exe
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.pdb
+C:\Users\mateus.spereira8\source\repos\Matrizes\Matrizes\obj\Debug\Matrizes.exe.config
