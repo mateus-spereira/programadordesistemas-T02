@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{1590C29F-57BC-41AF-A2AC-BF592528AABF}|Dia da Semana\\Dia da Semana.csproj|solutionrelative:dia da semana\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1590C29F-57BC-41AF-A2AC-BF592528AABF}|Dia da Semana\\Dia da Semana.csproj|c:\\users\\mateus.spereira8\\source\\repos\\dia da semana\\dia da semana\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1590C29F-57BC-41AF-A2AC-BF592528AABF}|Dia da Semana\\Dia da Semana.csproj|C:\\Users\\mateus.spereira8\\source\\repos\\Dia da Semana\\dia da semana\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1590C29F-57BC-41AF-A2AC-BF592528AABF}|Dia da Semana\\Dia da Semana.csproj|solutionrelative:dia da semana\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -50,8 +50,7 @@
               "ToolTip": "C:\\Users\\mateus.spereira8\\source\\repos\\Dia da Semana\\Dia da Semana\\Form1.cs [Design]",
               "RelativeToolTip": "Dia da Semana\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T19:44:44.613Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-25T19:44:44.613Z"
             }
           ]
         }
