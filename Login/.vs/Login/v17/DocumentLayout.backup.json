@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{78C3686C-33E5-473F-8F1C-E6128F4295C6}|Login\\Login.csproj|solutionrelative:login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78C3686C-33E5-473F-8F1C-E6128F4295C6}|Login\\Login.csproj|c:\\users\\mateus.spereira8\\source\\repos\\login\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{78C3686C-33E5-473F-8F1C-E6128F4295C6}|Login\\Login.csproj|C:\\Users\\mateus.spereira8\\source\\repos\\Login\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{78C3686C-33E5-473F-8F1C-E6128F4295C6}|Login\\Login.csproj|solutionrelative:login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,9 +34,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\mateus.spereira8\\source\\repos\\Login\\Login\\Form1.cs",
               "RelativeDocumentMoniker": "Login\\Form1.cs",
-              "ToolTip": "C:\\Users\\mateus.spereira8\\source\\repos\\Login\\Login\\Form1.cs*",
-              "RelativeToolTip": "Login\\Form1.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAWwCIAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mateus.spereira8\\source\\repos\\Login\\Login\\Form1.cs",
+              "RelativeToolTip": "Login\\Form1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T19:49:38.106Z",
               "EditorCaption": ""
@@ -47,8 +47,8 @@
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mateus.spereira8\\source\\repos\\Login\\Login\\Form1.cs",
               "RelativeDocumentMoniker": "Login\\Form1.cs",
-              "ToolTip": "C:\\Users\\mateus.spereira8\\source\\repos\\Login\\Login\\Form1.cs [Design]*",
-              "RelativeToolTip": "Login\\Form1.cs [Design]*",
+              "ToolTip": "C:\\Users\\mateus.spereira8\\source\\repos\\Login\\Login\\Form1.cs [Design]",
+              "RelativeToolTip": "Login\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T19:38:16.711Z",
               "EditorCaption": " [Design]"

@@ -8,3 +8,4 @@ C:\Users\mateus.spereira8\source\repos\Login\Login\bin\Debug\Login.exe
 C:\Users\mateus.spereira8\source\repos\Login\Login\bin\Debug\Login.pdb
 C:\Users\mateus.spereira8\source\repos\Login\Login\obj\Debug\Login.exe
 C:\Users\mateus.spereira8\source\repos\Login\Login\obj\Debug\Login.pdb
+C:\Users\mateus.spereira8\source\repos\Login\Login\obj\Debug\Login.exe.config
