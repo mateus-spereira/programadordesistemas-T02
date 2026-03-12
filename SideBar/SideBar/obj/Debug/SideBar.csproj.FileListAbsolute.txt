@@ -1,0 +1,10 @@
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\bin\Debug\SideBar.exe.config
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\bin\Debug\SideBar.exe
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\bin\Debug\SideBar.pdb
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.csproj.AssemblyReference.cache
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.frmHome.resources
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.Properties.Resources.resources
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.csproj.GenerateResource.cache
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.exe
+C:\Users\mateus.spereira8\source\repos\SideBar\SideBar\obj\Debug\SideBar.pdb
