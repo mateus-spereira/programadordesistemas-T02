@@ -1,0 +1,12 @@
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\bin\Debug\Show&Hide.exe.config
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\bin\Debug\Show&Hide.exe
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\bin\Debug\Show&Hide.pdb
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show&Hide.csproj.AssemblyReference.cache
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show_Hide.Form1.resources
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show_Hide.Properties.Resources.resources
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show&Hide.csproj.GenerateResource.cache
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show&Hide.csproj.CoreCompileInputs.cache
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show&Hide.exe
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show&Hide.pdb
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show&Hide.exe.config
+C:\Users\mateus.spereira8\source\repos\Show&Hide\Show&Hide\obj\Debug\Show_Hide.frmHome.resources
