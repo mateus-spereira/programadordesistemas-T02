@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mateus.spereira8\\source\\repos\\crud.frmCadastrodeClientes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F20EA9E6-2698-43B3-91F3-EFF96CB1CC5E}|crud.frmCadastrodeClientes\\crud.frmCadastrodeClientes.csproj|c:\\users\\mateus.spereira8\\source\\repos\\crud.frmcadastrodeclientes\\crud.frmcadastrodeclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20EA9E6-2698-43B3-91F3-EFF96CB1CC5E}|crud.frmCadastrodeClientes\\crud.frmCadastrodeClientes.csproj|solutionrelative:crud.frmcadastrodeclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mateus.spereira8\\source\\repos\\crud.frmCadastrodeClientes\\crud.frmCadastrodeClientes\\Form1.cs",
+              "RelativeDocumentMoniker": "crud.frmCadastrodeClientes\\Form1.cs",
+              "ToolTip": "C:\\Users\\mateus.spereira8\\source\\repos\\crud.frmCadastrodeClientes\\crud.frmCadastrodeClientes\\Form1.cs [Design]",
+              "RelativeToolTip": "crud.frmCadastrodeClientes\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T18:32:48.494Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
