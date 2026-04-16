@@ -41,10 +41,11 @@
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.lblNomeCompleto = new System.Windows.Forms.Label();
             this.tbConsulta = new System.Windows.Forms.TabPage();
+            this.lstCliente = new System.Windows.Forms.ListView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.lstCliente = new System.Windows.Forms.ListView();
+            this.btnNovoCadastro = new System.Windows.Forms.Button();
             this.panelTopo.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbCadastro.SuspendLayout();
@@ -183,6 +184,17 @@
             this.tbConsulta.Text = "Consulta";
             this.tbConsulta.UseVisualStyleBackColor = true;
             // 
+            // lstCliente
+            // 
+            this.lstCliente.HideSelection = false;
+            this.lstCliente.Location = new System.Drawing.Point(21, 97);
+            this.lstCliente.MultiSelect = false;
+            this.lstCliente.Name = "lstCliente";
+            this.lstCliente.Size = new System.Drawing.Size(728, 97);
+            this.lstCliente.TabIndex = 3;
+            this.lstCliente.UseCompatibleStateImageBehavior = false;
+            this.lstCliente.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lstCliente_ItemSelectionChanged);
+            // 
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(21, 25);
@@ -215,20 +227,25 @@
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // lstCliente
+            // btnNovoCadastro
             // 
-            this.lstCliente.HideSelection = false;
-            this.lstCliente.Location = new System.Drawing.Point(21, 97);
-            this.lstCliente.Name = "lstCliente";
-            this.lstCliente.Size = new System.Drawing.Size(728, 97);
-            this.lstCliente.TabIndex = 3;
-            this.lstCliente.UseCompatibleStateImageBehavior = false;
+            this.btnNovoCadastro.BackColor = System.Drawing.Color.Green;
+            this.btnNovoCadastro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovoCadastro.ForeColor = System.Drawing.Color.White;
+            this.btnNovoCadastro.Location = new System.Drawing.Point(207, 403);
+            this.btnNovoCadastro.Name = "btnNovoCadastro";
+            this.btnNovoCadastro.Size = new System.Drawing.Size(151, 35);
+            this.btnNovoCadastro.TabIndex = 3;
+            this.btnNovoCadastro.Text = "Novo Cadastro";
+            this.btnNovoCadastro.UseVisualStyleBackColor = false;
+            this.btnNovoCadastro.Click += new System.EventHandler(this.btnNovoCadastro_Click);
             // 
             // frmCadastrodeClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnNovoCadastro);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panelTopo);
@@ -264,6 +281,7 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.ListView lstCliente;
+        private System.Windows.Forms.Button btnNovoCadastro;
     }
 }
 
