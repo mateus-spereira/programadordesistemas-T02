@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gpboxGenero = new System.Windows.Forms.GroupBox();
-            this.rbFeminino = new System.Windows.Forms.RadioButton();
-            this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbOutro = new System.Windows.Forms.RadioButton();
+            this.rbMasculino = new System.Windows.Forms.RadioButton();
+            this.rbFeminino = new System.Windows.Forms.RadioButton();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.txtNumeroCadastrado = new System.Windows.Forms.TextBox();
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
@@ -41,7 +41,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.DTDatadeNascimento = new System.Windows.Forms.DateTimePicker();
             this.lblDatadeNascimento = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtpesquisa = new System.Windows.Forms.TextBox();
+            this.btnpesquisar = new System.Windows.Forms.Button();
             this.gpboxGenero.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // gpboxGenero
@@ -56,16 +60,16 @@
             this.gpboxGenero.TabStop = false;
             this.gpboxGenero.Text = "Gênero";
             // 
-            // rbFeminino
+            // rbOutro
             // 
-            this.rbFeminino.AutoSize = true;
-            this.rbFeminino.Location = new System.Drawing.Point(11, 31);
-            this.rbFeminino.Name = "rbFeminino";
-            this.rbFeminino.Size = new System.Drawing.Size(67, 17);
-            this.rbFeminino.TabIndex = 0;
-            this.rbFeminino.TabStop = true;
-            this.rbFeminino.Text = "Feminino";
-            this.rbFeminino.UseVisualStyleBackColor = true;
+            this.rbOutro.AutoSize = true;
+            this.rbOutro.Location = new System.Drawing.Point(11, 77);
+            this.rbOutro.Name = "rbOutro";
+            this.rbOutro.Size = new System.Drawing.Size(51, 17);
+            this.rbOutro.TabIndex = 2;
+            this.rbOutro.TabStop = true;
+            this.rbOutro.Text = "Outro";
+            this.rbOutro.UseVisualStyleBackColor = true;
             // 
             // rbMasculino
             // 
@@ -78,16 +82,16 @@
             this.rbMasculino.Text = "Masculino";
             this.rbMasculino.UseVisualStyleBackColor = true;
             // 
-            // rbOutro
+            // rbFeminino
             // 
-            this.rbOutro.AutoSize = true;
-            this.rbOutro.Location = new System.Drawing.Point(11, 77);
-            this.rbOutro.Name = "rbOutro";
-            this.rbOutro.Size = new System.Drawing.Size(51, 17);
-            this.rbOutro.TabIndex = 2;
-            this.rbOutro.TabStop = true;
-            this.rbOutro.Text = "Outro";
-            this.rbOutro.UseVisualStyleBackColor = true;
+            this.rbFeminino.AutoSize = true;
+            this.rbFeminino.Location = new System.Drawing.Point(11, 31);
+            this.rbFeminino.Name = "rbFeminino";
+            this.rbFeminino.Size = new System.Drawing.Size(67, 17);
+            this.rbFeminino.TabIndex = 0;
+            this.rbFeminino.TabStop = true;
+            this.rbFeminino.Text = "Feminino";
+            this.rbFeminino.UseVisualStyleBackColor = true;
             // 
             // cbEstado
             // 
@@ -173,11 +177,40 @@
             this.lblDatadeNascimento.TabIndex = 9;
             this.lblDatadeNascimento.Text = "Data de Nascimento:";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(361, 174);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // txtpesquisa
+            // 
+            this.txtpesquisa.Location = new System.Drawing.Point(361, 109);
+            this.txtpesquisa.Name = "txtpesquisa";
+            this.txtpesquisa.Size = new System.Drawing.Size(240, 20);
+            this.txtpesquisa.TabIndex = 11;
+            this.txtpesquisa.TextChanged += new System.EventHandler(this.txtpesquisa_TextChanged_1);
+            // 
+            // btnpesquisar
+            // 
+            this.btnpesquisar.Location = new System.Drawing.Point(443, 135);
+            this.btnpesquisar.Name = "btnpesquisar";
+            this.btnpesquisar.Size = new System.Drawing.Size(83, 33);
+            this.btnpesquisar.TabIndex = 12;
+            this.btnpesquisar.Text = "Editar";
+            this.btnpesquisar.UseVisualStyleBackColor = true;
+            this.btnpesquisar.Click += new System.EventHandler(this.btnpesquisar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(220, 508);
+            this.ClientSize = new System.Drawing.Size(677, 508);
+            this.Controls.Add(this.btnpesquisar);
+            this.Controls.Add(this.txtpesquisa);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblDatadeNascimento);
             this.Controls.Add(this.DTDatadeNascimento);
             this.Controls.Add(this.label3);
@@ -192,6 +225,7 @@
             this.Text = "Form1";
             this.gpboxGenero.ResumeLayout(false);
             this.gpboxGenero.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,6 +246,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker DTDatadeNascimento;
         private System.Windows.Forms.Label lblDatadeNascimento;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtpesquisa;
+        private System.Windows.Forms.Button btnpesquisar;
     }
 }
 

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using Mysqlx.Prepare;
+using MySqlX.XDevAPI;
+using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using Mysqlx.Prepare;
 
 
 
@@ -19,11 +21,61 @@ namespace FormularioSimples
         MySqlConnection Conexao;
         string data_source = "datasource=localhost; username=root; password=; database=db_formulariosimples";
 
-        private int? codigo_cliente = null;
+        private int? id_cliente = null;
 
         public Form1()
         {
             InitializeComponent();
+            ConfigurarDataGridView();
+            CarregarDadosComFiltro();
+        }
+
+        private void ConfigurarDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.RowHeadersVisible = false;
+        }
+
+        private void CarregarDadosComFiltro(string filtro = "")
+        {
+            try
+            {
+                using (Conexao = new MySqlConnection(data_source))
+                {
+                    Conexao.Open();
+
+                    string sql = @"SELECT id, Nome, NumeroCadastro, DatadeNascimento, Estado, Genero 
+                                   FROM formulariosimples";
+
+                    if (!string.IsNullOrEmpty(filtro))
+                    {
+                        sql += @" WHERE LOWER(Nome) LIKE LOWER(@filtro) OR LOWER(NumeroCadastro) LIKE LOWER(@filtro)";
+                    }
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, Conexao))
+                    {
+                        if (!string.IsNullOrEmpty(filtro))
+                        {
+                            cmd.Parameters.AddWithValue("@filtro", "%" + filtro + "%");
+                        }
+
+                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                        DataTable tabela = new DataTable();
+                        adapter.Fill(tabela);
+
+                        dataGridView1.DataSource = tabela;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar dados: " + ex.Message);
+            }
         }
 
         private void btnCadastro_Click(object sender, EventArgs e)
@@ -32,111 +84,122 @@ namespace FormularioSimples
             {
                 string genero = "";
 
-                if (rbMasculino.Checked)
-                    genero = "Masculino";
-                else if (rbFeminino.Checked)
-                    genero = "Feminino";
-                else if (rbOutro.Checked)
-                    genero = "Outro";
+                if (rbMasculino.Checked) genero = "Masculino";
+                else if (rbFeminino.Checked) genero = "Feminino";
+                else if (rbOutro.Checked) genero = "Outro";
 
                 if (string.IsNullOrEmpty(txtNomeCompleto.Text.Trim()) ||
                     string.IsNullOrEmpty(txtNumeroCadastrado.Text.Trim()) ||
                     string.IsNullOrEmpty(cbEstado.Text.Trim()) ||
                     string.IsNullOrEmpty(genero))
-
                 {
-                    MessageBox.Show("Todos os campos devem ser preenchidos.",
-                                    "Validação",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Warning);
+                    MessageBox.Show("Todos os campos devem ser preenchidos.");
                     return;
                 }
 
-
-                Conexao = new MySqlConnection(data_source);
-                Conexao.Open();
-
-                using (MySqlCommand cmd = new MySqlCommand())
+                using (Conexao = new MySqlConnection(data_source))
                 {
-                    cmd.Connection = Conexao;
+                    Conexao.Open();
 
-                    if (codigo_cliente == null)
+                    using (MySqlCommand cmd = new MySqlCommand())
                     {
+                        cmd.Connection = Conexao;
 
-                        cmd.CommandText = @"INSERT INTO formulariosimples     
-                        (Nome, NumeroCadastro, DatadeNascimento, Estado, Genero) 
-                        VALUES (@NomeCompleto, @NumeroCadastrado, @DatadeNascimento, @Estado, @Genero)";
-                        cmd.Parameters.Add("@NomeCompleto", MySqlDbType.VarChar).Value = txtNomeCompleto.Text.Trim();
-                        cmd.Parameters.Add("@NumeroCadastrado", MySqlDbType.VarChar).Value = txtNumeroCadastrado.Text.Trim();
-                        cmd.Parameters.Add("@DatadeNascimento", MySqlDbType.Date).Value = DTDatadeNascimento.Value;
-                        cmd.Parameters.Add("@Estado", MySqlDbType.VarChar).Value = cbEstado.Text.Trim();
-                        cmd.Parameters.Add("@Genero", MySqlDbType.VarChar).Value = genero;
+                        if (id_cliente == null)
+                        {
+                            // INSERT
+                            cmd.CommandText = @"INSERT INTO formulariosimples
+                                (Nome, NumeroCadastro, DatadeNascimento, Estado, Genero)
+                                VALUES (@Nome, @Numero, @Data, @Estado, @Genero)";
+                        }
+                        else
+                        {
+                            // UPDATE
+                            cmd.CommandText = @"UPDATE formulariosimples SET
+                                Nome = @Nome,
+                                NumeroCadastro = @Numero,
+                                DatadeNascimento = @Data,
+                                Estado = @Estado,
+                                Genero = @Genero
+                                WHERE id = @id";
 
+                            cmd.Parameters.AddWithValue("@id", id_cliente);
+                        }
+
+                        cmd.Parameters.AddWithValue("@Nome", txtNomeCompleto.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Numero", txtNumeroCadastrado.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Data", DTDatadeNascimento.Value);
+                        cmd.Parameters.AddWithValue("@Estado", cbEstado.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Genero", genero);
 
                         cmd.ExecuteNonQuery();
 
-                        MessageBox.Show("Contato inserido com Sucesso: ",
-                                            "Sucesso",
-                                            MessageBoxButtons.OK,
-                                            MessageBoxIcon.Information);
+                        btnCadastro.Text = "Cadastrar";
 
+                        MessageBox.Show("Dados salvos com sucesso!");
                     }
-
-                    else
-                    {
-                        //update
-                        cmd.CommandText = cmd.CommandText = @"UPDATE formulariosimples 
-                        SET Nome = @NomeCompleto,
-                        NumeroCadastro = @NumeroCadastrado,
-                        DatadeNascimento = @DatadeNascimento,
-                        Estado = @Estado
-                        WHERE codigo = @codigo";
-
-                        cmd.Parameters.Add("@codigo", MySqlDbType.Int32).Value = codigo_cliente;
-                        cmd.Parameters.Add("@NomeCompleto", MySqlDbType.VarChar).Value = txtNomeCompleto.Text.Trim();
-                        cmd.Parameters.Add("@NumeroCadastrado", MySqlDbType.VarChar).Value = txtNumeroCadastrado.Text.Trim();
-                        cmd.Parameters.Add("@DatadeNascimento", MySqlDbType.Date).Value = DTDatadeNascimento.Value;
-                        cmd.Parameters.Add("@Estado", MySqlDbType.VarChar).Value = cbEstado.Text.Trim();
-                        cmd.Parameters.Add("@Genero", MySqlDbType.VarChar).Value = genero;
-
-                        //Executa o comando de alteração no banco
-                        cmd.ExecuteNonQuery();
-
-                        //Mensagem de sucesso para dados atualizados 
-                        MessageBox.Show($"Os dados com o códgio {codigo_cliente} foram alterados com Sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-
-                    codigo_cliente = null;
-
-                    //Limpa os campos após o sucesso
-                    txtNomeCompleto.Text = string.Empty;
-                    txtNumeroCadastrado.Text = "";
-                    DTDatadeNascimento.Text = "";
-                    cbEstado.Text = string.Empty;
                 }
 
-            }
-            catch (MySqlException ex)
-            {
-                //Trata erros relacionados ao MySQL
-                MessageBox.Show("Erro" + ex.Number + " ocorreu: " + ex.Message, "Erro",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                id_cliente = null;
 
+                // Limpar campos
+                txtNomeCompleto.Clear();
+                txtNumeroCadastrado.Clear();
+                cbEstado.Text = "";
+
+                // Atualizar grid
+                CarregarDadosComFiltro();
             }
             catch (Exception ex)
             {
-                // Trata outros tipos de erro 
-                MessageBox.Show("Ocorreu: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro: " + ex.Message);
             }
-            finally
+        }
+
+        private void btnpesquisar_Click(object sender, EventArgs e)
+        {
+            try
             {
-                //Garante que a conexão com o banco será fechada, mesmo se o ocorrer o erro
-                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                if (dataGridView1.CurrentRow != null)
                 {
-                    Conexao.Close();
+                    // Pegando o ID do registro selecionado
+                    id_cliente = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id"].Value);
+
+                    // Preenchendo os campos
+                    txtNomeCompleto.Text = dataGridView1.CurrentRow.Cells["Nome"].Value.ToString();
+                    txtNumeroCadastrado.Text = dataGridView1.CurrentRow.Cells["NumeroCadastro"].Value.ToString();
+
+                    cbEstado.Text = dataGridView1.CurrentRow.Cells["Estado"].Value.ToString();
+
+                    DTDatadeNascimento.Value =
+                        Convert.ToDateTime(dataGridView1.CurrentRow.Cells["DatadeNascimento"].Value);
+
+                    string genero = dataGridView1.CurrentRow.Cells["Genero"].Value.ToString();
+
+                    btnCadastro.Text = "Atualizar";
+
+                    // Marcando RadioButton
+                    rbMasculino.Checked = genero == "Masculino";
+                    rbFeminino.Checked = genero == "Feminino";
+                    rbOutro.Checked = genero == "Outro";
+
+                    MessageBox.Show("Dados carregados para edição.");
+                }
+                else
+                {
+                    MessageBox.Show("Registro não encontrado.");
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar dados: " + ex.Message);
+            }
+        }
+        
+                
+        private void txtpesquisa_TextChanged_1(object sender, EventArgs e)
+        {
+            CarregarDadosComFiltro(txtpesquisa.Text.Trim());
         }
     }
 }
-         
