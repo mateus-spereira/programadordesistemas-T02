@@ -195,11 +195,60 @@ namespace FormularioSimples
                 MessageBox.Show("Erro ao carregar dados: " + ex.Message);
             }
         }
-        
-                
+               
         private void txtpesquisa_TextChanged_1(object sender, EventArgs e)
         {
             CarregarDadosComFiltro(txtpesquisa.Text.Trim());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow != null)
+            {
+                DialogResult DialogResult = MessageBox.Show("Deseja realmente excluir este registro?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (DialogResult == DialogResult.Yes)
+                {
+                    try
+                    {
+
+                        using (Conexao = new MySqlConnection(data_source))
+                        {
+                            Conexao.Open();
+
+                            string sql = "DELETE FROM formulariosimples WHERE id = @id";
+
+                            string idSelecionado = dataGridView1.CurrentRow.Cells["id"].Value.ToString();
+
+                            using (MySqlCommand cmd = new MySqlCommand(sql, Conexao))
+                            {
+                                cmd.Parameters.AddWithValue("@id", idSelecionado);
+
+                                int rowsAffected = cmd.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("Registro excluído com sucesso!");
+
+                                    CarregarDadosComFiltro();
+                                }
+                                else
+                                {
+
+                                    MessageBox.Show("Registro não encontrado");
+                                }
+
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao excluir: " + ex.Message);
+
+                    }
+                }
+
+            }
         }
     }
 }

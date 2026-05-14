@@ -44,6 +44,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtpesquisa = new System.Windows.Forms.TextBox();
             this.btnpesquisar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.gpboxGenero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -195,19 +196,33 @@
             // 
             // btnpesquisar
             // 
-            this.btnpesquisar.Location = new System.Drawing.Point(443, 135);
+            this.btnpesquisar.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnpesquisar.Location = new System.Drawing.Point(361, 138);
             this.btnpesquisar.Name = "btnpesquisar";
             this.btnpesquisar.Size = new System.Drawing.Size(83, 33);
             this.btnpesquisar.TabIndex = 12;
             this.btnpesquisar.Text = "Editar";
-            this.btnpesquisar.UseVisualStyleBackColor = true;
+            this.btnpesquisar.UseVisualStyleBackColor = false;
             this.btnpesquisar.Click += new System.EventHandler(this.btnpesquisar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Red;
+            this.btnExcluir.ForeColor = System.Drawing.Color.Black;
+            this.btnExcluir.Location = new System.Drawing.Point(520, 138);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(81, 33);
+            this.btnExcluir.TabIndex = 13;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 508);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnpesquisar);
             this.Controls.Add(this.txtpesquisa);
             this.Controls.Add(this.dataGridView1);
@@ -249,6 +264,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Button btnpesquisar;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
 
